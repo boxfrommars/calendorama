@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+
+  <!-- build:css(.) styles/vendor.css -->
+  <!-- bower:css -->
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:css(.tmp) styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+</head>
+<body ng-app="calendoramaApp">
+
+  <div id="wrap">
+
+    <h1>calendorama!</h1>
+    <ul id="navigate">
+      <li><a href="/rss.xml" class="permtooltip" title="подписаться на rss" id="rss">rss</a></li>
+      <li><a href="#authors" class="pseudo permtooltip" title="авторы картинок" id="authors">authors</a></li>
+      <li><a href="#montheslist" class="pseudo permtooltip" title="перейти к месяцу" id="montheslist">monthes</a></li>
+    </ul>
+    <div id="month-wrap">
+      <table id="calendar" cellspacing="1" class="8_2015" style="display: table;">
+        <tbody>
+        <tr>
+          <td class="a-m-d"></td>
+          <td class="a-m-d"></td>
+          <td class="a-m-d"></td>
+          <td class="a-m-d"></td>
+          <td class="a-m-d"></td>
+          <td class="w-p"><span>1</span></td>
+          <td class="w-p"><span>2</span></td>
+        </tr>
+        <tr>
+          <td class="w-p"><span>3</span></td>
+          <td class="w-p"><span>4</span></td>
+          <td class="w-p"><span>5</span></td>
+          <td class="w-p"><span>6</span></td>
+          <td class="w-p"><span>7</span></td>
+          <td class="w-p"><span>8</span></td>
+          <td class=" today">
+            <a id="f2015_8_9" title="ярослав: комплексы" class="view_full tooltip goto" href="/images/blog/8_9_full.jpg">
+              <img alt="ярослав: комплексы" class="thumb" width="90px" src="/images/blog/8_9_thmb.jpg">
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td class="w-p"><span>10</span></td>
+          <td class="w-p"><span>11</span></td>
+          <td class="w-p"><span>12</span></td>
+          <td class="w-p"><span>13</span></td>
+          <td class="w-p"><span>14</span></td>
+          <td class="w-p"><span>15</span></td>
+          <td class="w-p"><span>16</span></td>
+        </tr>
+        <tr>
+          <td class="w-p"><span>17</span></td>
+          <td class="w-p"><span>18</span></td>
+          <td class="w-p"><span>19</span></td>
+          <td class="w-p"><span>20</span></td>
+          <td class="w-p"><span>21</span></td>
+          <td class="w-p"><span>22</span></td>
+          <td class="">
+            <a id="f2015_8_23" title="маша, аматери, настя апрелкова, дг, ярослав: гонорар за 4-й эпизод" class="view_full tooltip goto" href="/images/blog/8_23_full.jpg">
+              <img alt="маша, аматери, настя апрелкова, дг, ярослав: гонорар за 4-й эпизод" class="thumb" width="90px" src="/images/blog/8_23_thmb.jpg">
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td class="w-p"><span>24</span></td>
+          <td class="w-p"><span>25</span></td>
+          <td class="w-p"><span>26</span></td>
+          <td class="w-p"><span>27</span></td>
+          <td class="w-p"><span>28</span></td>
+          <td class="w-p"><span>29</span></td>
+          <td class="w-p"><span>30</span></td>
+        </tr>
+        <tr>
+          <td class="w-p"><span>31</span></td>
+          <td class="a-m-d"></td>
+          <td class="a-m-d"></td>
+          <td class="a-m-d"></td>
+          <td class="a-m-d"></td>
+          <td class="a-m-d"></td>
+          <td class="a-m-d"></td>
+        </tr>
+        </tbody>
+      </table>
+      <h2 id="month">August&nbsp;&nbsp;
+        <span id="month-nav" class="nav">
+          <a title="July 2015" href="/#d2015_7" class="goto previous tooltip" id="m2015_7">&lt;</a>
+          <a title="September 2015" href="/#d2015_9" class="goto next tooltip" id="m2015_9">&gt;</a>
+        </span>
+      </h2>
+    </div>
+    <p id="footer">
+      dmitry groza<br>
+      nadja gimmer<br>
+      in incredible <b><a href="#" id="about" class="pseudo permtooltip" title="о проекте">calendorama project!</a></b>
+    </p>
+    <!--	надя гиммер, вы прекрасны :–) -->
+  </div>
+
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+
+  <!-- build:js(.) scripts/vendor.js -->
+  <!-- bower:js -->
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-animate/angular-animate.js"></script>
+  <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+  <script src="bower_components/angular-resource/angular-resource.js"></script>
+  <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+  <script src="bower_components/angular-touch/angular-touch.js"></script>
+  <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+  <script src="bower_components/moment/moment.js"></script>
+  <script src="bower_components/underscore/underscore.js"></script>
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:js({.tmp,app}) scripts/scripts.js -->
+  <script src="scripts/app.js"></script>
+  <script src="scripts/controllers/main.js"></script>
+  <!-- endbuild -->
+</body>
+</html>
